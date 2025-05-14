@@ -1,0 +1,174 @@
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1, h2, h3 {
+    color: #2d8b8b;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Calculator Form Container */
+  form {
+    background: #ffffff;
+    padding: 25px 20px;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+  }
+  
+  button {
+    background-color: #2d8b8b;
+    color: white;
+    border: 1px solid black;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #226666;
+  }
+  
+  /* Report Section */
+  #results {
+    background: #ffffff;
+    padding: 25px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  #total {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #chart div {
+    background-color: #2d8b8b;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-bottom: 6px;
+  }
+  
+  /* Dark Mode Toggle */
+  /* #darkToggle {
+    margin-left: 5px;
+    display: none;
+  }
+   */
+  #darkModeToggleContainer {
+    text-align: right;
+    max-width: 500px;
+    margin: 0 auto 15px;
+    padding: 0 5px;
+  }
+
+  /* #darkModeToggleContainer {
+    text-align: right;
+    max-width: 500px;
+    margin: 0 auto 20px;
+  } */
+  
+  #darkModeButton {
+    background-color: #2d8b8b;
+    color: #fff;
+    border: 1px solid black;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #darkModeButton:hover {
+    background-color: #226666;
+  }
+  
+  body.dark #darkModeButton {
+    background-color: #444;
+  }
+  
+  /* Dark Mode Styling */
+  body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark form,
+  body.dark #results {
+    background-color: #1e1e1e;
+    border: 1px solid #444;
+    box-shadow: 0 2px 6px rgba(255,255,255,0.05);
+  }
+  
+  body.dark input {
+    background-color: #2a2a2a;
+    color: #fff;
+    border: 1px solid #555;
+  }
+  
+  body.dark button {
+    background-color: #444;
+  }
+  
+  body.dark #chart div {
+    background-color: #444;
+  }
+  
+  /*Responsive */
+  @media (max-width: 600px) {
+    form, #results {
+      padding: 20px 15px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    canvas {
+      max-width: 100%;
+    } 
+ }
+
+ .footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+  }
+
+  body.dark .footer {
+    color: #9ca3af;
+  }
+  
